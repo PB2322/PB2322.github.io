@@ -1,104 +1,40 @@
-* {
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  border: 0;
-}
-
-html, body, .wrapper {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
+body, html {
+  font-size: 5px;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
+  background: rgb(252,255,244); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(252,255,244,1) 0%, rgba(223,229,215,1) 40%, rgba(179,190,173,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
 }
 
-.sq {
-  display: block;
-  width: 920px;
-  height: 920px;
-  background: rgba(0,0,0,0.25);
+.rope-yarn {
+  width: 50rem;
+  height: 120rem;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -15rem;
+  left: -20rem;
 }
 
-.sq0 {
-  background: url('https://i.imgur.com/7FEOsAO.png') center no-repeat;
-  z-index: 99;
+.yarn {
+  position: absolute;
+  left: -20rem;
+  width: 90rem;
+  height: 40rem;
+  visibility: hidden;
 }
 
-.sq1 {
-  background: url('https://i.imgur.com/y4kFotb.png') center no-repeat;
-  z-index: 98;
+.cat {
+  opacity: 0;
 }
 
-.sq2 {
-  background: url('https://i.imgur.com/tZoPizp.png') center no-repeat;
-  z-index: 97;
-}
-
-.sq3 {
-  background: url('https://i.imgur.com/gw41lr0.png') center no-repeat;
-  z-index: 96;
-}
-
-.sq4 {
-  background: url('https://i.imgur.com/rPqtct5.png') center no-repeat;
-  z-index: 95;
-}
-
-.sq5 {
-  background: url('https://i.imgur.com/geNgBwt.png') center no-repeat;
-  z-index: 94;
-}
-
-.sq6 {
-  background: url('https://i.imgur.com/YdLVWzr.png') center no-repeat;
-  z-index: 93;
-}
-
-.sq7 {
-  background: url('https://i.imgur.com/kdgNmmq.png') center no-repeat;
-  z-index: 92;
-}
-
-.sq8 {
-  background: url('https://i.imgur.com/NsX5j8E.png') center no-repeat;
-  z-index: 91;
-}
-
-.sq9 {
-  background: url('https://i.imgur.com/e6DeYZ5.png') center no-repeat;
-  z-index: 90;
-}
-
-.sq10 {
-  background: url('https://i.imgur.com/shQrxCF.png') center no-repeat;
-  z-index: 89;
-}
-
-.sq11 {
-  background: url('https://i.imgur.com/knstQaT.png') center no-repeat;
-  z-index: 88;
-}
-
-.sq12 {
-  background: url('https://i.imgur.com/dJ4y1ZT.png') center no-repeat;
-  z-index: 87;
-}
-
-.sq13 {
-  background: url('https://i.imgur.com/py919EE.png') center no-repeat;
-  z-index: 86;
-}
-
-.sq14 {
-  background: url('https://i.imgur.com/Wxe70C4.png') center no-repeat;
-  z-index: 85;
+@media screen and (min-width:900px) {
+  body, html {
+    font-size: 10px !important;
+  }
+  .yarn, .rope-yarn {
+    left: 0 !important;
+  }
 }
